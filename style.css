@@ -1,0 +1,152 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #e91e63; /* TikTok-ish pink/red */
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* This will help center the downloader section */
+    width: 100%;
+}
+
+.downloader-section {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Max width for the content box */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#tiktokUrl {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.buttons button {
+    background-color: #25f4ee; /* TikTok-ish cyan */
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #20d8d3;
+}
+
+.buttons button#downloadNoWatermark {
+    background-color: #fe2c55; /* TikTok red */
+    color: #fff;
+}
+
+.buttons button#downloadNoWatermark:hover {
+    background-color: #e4274c;
+}
+
+.how-to-use {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px; /* Consistent width */
+    margin-bottom: 20px;
+}
+
+.how-to-use h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.how-to-use p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#progress-indicator, #error-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px; /* Consistent width */
+    text-align: center;
+}
+
+#progress-indicator {
+    background-color: #e0f7fa; /* Light cyan */
+    color: #00796b;
+}
+
+#error-message p {
+    color: #d32f2f; /* Red for errors */
+    background-color: #ffebee; /* Light pink background */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the bottom */
+    padding: 20px;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .downloader-section, .how-to-use {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .buttons button {
+        width: 100%; /* Stack buttons on smaller screens */
+        margin: 8px 0;
+    }
+}
