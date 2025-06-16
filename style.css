@@ -122,6 +122,44 @@ main {
     border-radius: 4px;
 }
 
+.results-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px; /* Consistent width */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left; /* Align text to left for results */
+}
+
+.results-section h2 {
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center; /* Center the 'Results:' heading */
+}
+
+.results-section a {
+    display: block;
+    padding: 10px;
+    background-color: #e0f2f7; /* Light blue background for links */
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    text-align: center; /* Center text within the link/button */
+    transition: background-color 0.3s ease;
+}
+
+.results-section a:hover {
+    background-color: #cce4eb;
+}
+
+.results-section p { /* For messages within results, if any */
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
 
 footer {
     text-align: center;
@@ -137,7 +175,7 @@ footer {
         padding: 15px;
     }
 
-    .downloader-section, .how-to-use {
+    .downloader-section, .how-to-use, .results-section { /* Added .results-section here */
         padding: 20px;
     }
 
